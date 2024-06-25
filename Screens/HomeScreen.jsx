@@ -6,10 +6,13 @@ function HomeScreen(props){
     return(
         <View style = {styles.viewStyle}>
             <Text style = {styles.headingStyle}>React Navigation</Text>
-            <Text style = {styles.textStyle}>This is home Screen</Text>
-            <Button title="Profile" onPress={() => props.navigation.navigate('Profile', {
+            <Text style = {styles.textStyle}>This is Home Screen</Text>
+            <Button 
+                title="Profile" 
+                onPress={() => props.navigation.navigate('Profile', {
                 name: "Joss"
-            })}/>
+            })}
+            />
         </View>
     );
 }
